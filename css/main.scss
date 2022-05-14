@@ -1100,6 +1100,79 @@ footer {
   margin: 29px 0 150px;
 }
 
+.services-list {
+  margin: 29px 0 150px;
+
+  &__grid {
+    display: grid;
+    grid-gap: 50px 174px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 36px;
+  }
+
+  &__card {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+
+    &:hover .services-list__link {
+      text-decoration: underline;
+
+      &::after {
+        background-image: url("../img/services_list_arrow_long.svg");
+        width: 25px;
+      }
+    }
+  }
+
+  &__img {
+    height: 200px;
+
+    img {
+      object-position: left;
+      height: 100%;
+      object-fit: contain;
+      width: 100%;
+    }
+  }
+
+  &__price {
+    display: block;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 43px;
+  }
+
+  &__name {
+    flex-grow: 1;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 10px;
+  }
+
+  &__link {
+    align-items: center;
+    color: $black;
+    display: flex;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 8px;
+    text-decoration: none;
+
+    &::after {
+      background: url("../img/services_list_arrow.svg") no-repeat;
+      background-size: contain;
+      content: '';
+      display: block;
+      margin-left: 10px;
+      height: 15px;
+      width: 21px;
+    }
+  }
+}
+
 @media screen and (max-width: 1600px) {
   .gallery {
     &__slider {
@@ -1248,6 +1321,33 @@ footer {
 
   .services-page .services {
     margin: 29px 0 130px;
+  }
+
+  .services-list {
+    margin: 29px 0 130px;
+
+    &__grid {
+      grid-gap: 70px 54px;
+    }
+
+    &__card {
+      &:hover {
+        .services-list__link {
+          &::after {
+            background-image: url("../img/services_list_arrow_yellow.svg");
+            width: 21px;
+          }
+        }
+      }
+    }
+
+    &__link {
+      color: $yellow;
+
+      &::after {
+        background-image: url("../img/services_list_arrow_yellow.svg");
+      }
+    }
   }
 }
 
@@ -1658,6 +1758,25 @@ footer {
   .services-page .services {
     margin: 29px 0 80px;
   }
+
+  .services-list {
+    margin: 29px 0 80px;
+
+    &__grid {
+      grid-gap: 65px 95px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__name {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__link {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
 }
 
 @media screen and (max-width: 580px) {
@@ -1964,6 +2083,43 @@ footer {
 
   .services-page .services {
     margin: 23px 0 70px;
+  }
+
+  .services-list {
+    margin: 23px 0 70px;
+
+    &__grid {
+      grid-gap: 50px 38px;
+      margin-top: 30px;
+    }
+
+    &__img {
+      height: 111px;
+    }
+
+    &__price {
+      font-size: 25px;
+      line-height: 30px;
+      margin-top: 9px;
+    }
+
+    &__name {
+      font-size: 14px;
+      line-height: 17px;
+      margin-top: 11px;
+    }
+
+    &__link {
+      font-size: 14px;
+      line-height: 17px;
+      margin-top: 10px;
+
+      &::after {
+        background-image: url("../img/services_list_arrow_yellow_long.svg");
+        height: 7.3px;
+        width: 20.5px;
+      }
+    }
   }
 }
 

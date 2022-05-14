@@ -18,6 +18,10 @@ $('.services__card').on('click', function () {
     window.location = $(this).find('a').attr('href')
 })
 
+$('.services-list__card').on('click', function () {
+    window.location = $(this).find('a').attr('href')
+})
+
 $('.gallery__slider').slick({
     arrows: true,
     dots: true,
