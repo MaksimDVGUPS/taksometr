@@ -1173,6 +1173,118 @@ footer {
   }
 }
 
+.service-detail {
+  margin: 30px 0 86px;
+
+  &__wrapper {
+    display: grid;
+    grid-gap: 60px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 45px;
+  }
+
+  &__info {
+    p {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  &__price {
+    display: block;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 43px;
+    margin-top: 45px;
+  }
+
+  &__btn {
+    margin-top: 30px;
+
+    &:hover {
+      color: $black;
+    }
+  }
+
+  &__img {
+    height: 352px;
+
+    img {
+      object-fit: contain;
+      object-position: left;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.question {
+  margin-bottom: 150px;
+
+  &__wrapper {
+    border: 2px solid #545454;
+    border-radius: 15px;
+    display: grid;
+    grid-gap: 60px;
+    grid-template-columns: 1fr auto;
+    padding: 30px 40px;
+  }
+
+  &__h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  &__description {
+    color: $light-black;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 9px;
+  }
+
+  &__contacts {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__socials {
+    display: flex;
+
+    a {
+      display: block;
+    }
+
+    a + a {
+      margin-left: 58px;
+    }
+
+    img {
+      width: 67px;
+    }
+  }
+
+  &__phone {
+    color: $black;
+    display: block;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 42px;
+    text-align: right;
+    text-decoration: none;
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+    width: fit-content;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 @media screen and (max-width: 1600px) {
   .gallery {
     &__slider {
@@ -1348,6 +1460,14 @@ footer {
         background-image: url("../img/services_list_arrow_yellow.svg");
       }
     }
+  }
+
+  .service-detail {
+    margin: 30px 0 57px;
+  }
+
+  .question {
+    margin-bottom: 130px;
   }
 }
 
@@ -1777,6 +1897,60 @@ footer {
       line-height: 20px;
     }
   }
+
+  .service-detail {
+    margin: 30px 0 51px;
+
+    &__wrapper {
+      grid-gap: 51px;
+      grid-template-columns: 1fr;
+      margin-top: 33px;
+    }
+
+    &__img {
+      height: unset;
+    }
+
+    &__info {
+      p {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .question {
+    margin-bottom: 80px;
+
+    &__wrapper {
+      grid-gap: 20px;
+    }
+
+    &__h2 {
+      font-size: 40px;
+      line-height: 49px;
+    }
+
+    &__description {
+      margin-top: 11px;
+    }
+
+    &__socials {
+      a + a {
+        margin-left: 20px;
+      }
+
+      img {
+        width: 45px;
+      }
+    }
+
+    &__phone {
+      font-size: 20px;
+      line-height: 24px;
+      margin-top: 35px;
+    }
+  }
 }
 
 @media screen and (max-width: 580px) {
@@ -2119,6 +2293,56 @@ footer {
         height: 7.3px;
         width: 20.5px;
       }
+    }
+  }
+
+  .service-detail {
+    margin: 54px 0 38px;
+
+    &__wrapper {
+      grid-gap: 32px;
+      margin-top: 28px;
+    }
+
+    &__info {
+      p {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+
+    &__price {
+      font-size: 25px;
+      line-height: 30px;
+    }
+
+    &__btn {
+      font-size: 16px;
+      line-height: 20px;
+      padding: 20px 50px;
+    }
+  }
+
+  .question {
+    margin-bottom: 70px;
+
+    &__wrapper {
+      grid-gap: 36px;
+      grid-template-columns: 1fr;
+      padding: 22px 20px 36px;
+    }
+
+    &__h2 {
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &__contacts {
+      align-items: flex-start;
+    }
+
+    &__phone {
+      margin-top: 19px;
     }
   }
 }
