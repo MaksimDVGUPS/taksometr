@@ -897,6 +897,17 @@ footer {
   padding: 24px 34px;
   width: 100%;
 }
+.modal input.error {
+  border: 2px solid #D81A1A;
+  color: #D81A1A;
+}
+.modal input.error::placeholder {
+  color: #D81A1A;
+}
+.modal input.done {
+  border: 2px solid #00FF67;
+  color: #00FF67;
+}
 .modal input + input {
   margin-top: 20px;
 }

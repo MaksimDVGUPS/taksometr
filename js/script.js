@@ -44,3 +44,44 @@ $('.gallery__slider').slick({
         }
     ]
 })
+
+const patternMask = IMask($('.modal input[name=phone]')[0], {
+    mask: '+{7} (000) 000-00-00'
+});
+
+$('.modal input[name=name]').on('blur', checkName)
+$('.modal input[name=phone]').on('blur', checkPhone)
+
+$('.modal form').on('submit', function (e) {
+    e.preventDefault()
+
+    if (checkName() && checkPhone()) {
+        $(this).html(`
+            <p>Заявка успешно отправлена! В ближайшее время наш менеджер с вами свяжется!</p>
+        `)
+    }
+})
+
+function checkName () {
+    if ($('.modal input[name=name]').val().trim().length === 0) {
+        $('.modal input[name=name]').removeClass('done')
+        $('.modal input[name=name]').addClass('error')
+        return false
+    } else {
+        $('.modal input[name=name]').removeClass('error')
+        $('.modal input[name=name]').addClass('done')
+        return true
+    }
+}
+
+function checkPhone () {
+    if ($('.modal input[name=phone]').val().trim().length !== 18) {
+        $('.modal input[name=phone]').removeClass('done')
+        $('.modal input[name=phone]').addClass('error')
+        return false
+    } else {
+        $('.modal input[name=phone]').removeClass('error')
+        $('.modal input[name=phone]').addClass('done')
+        return true
+    }
+}

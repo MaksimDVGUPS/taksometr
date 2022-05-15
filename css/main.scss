@@ -1060,6 +1060,20 @@ footer {
     line-height: 17px;
     padding: 24px 34px;
     width: 100%;
+
+    &.error {
+      border: 2px solid $red;
+      color: $red;
+
+      &::placeholder {
+        color: $red;
+      }
+    }
+
+    &.done {
+      border: 2px solid #00FF67;
+      color: #00FF67;
+    }
   }
 
   input + input {
