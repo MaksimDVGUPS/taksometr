@@ -1596,26 +1596,26 @@ footer {
   }
 
   .services {
-    &__card {
-      &:nth-child(1) {
+    .av-container {
+      &:nth-child(1) .services__card {
         img {
           width: 40%;
         }
       }
 
-      &:nth-child(2) {
+      &:nth-child(2) .services__card {
         img {
           width: 70%;
         }
       }
 
-      &:nth-child(3) {
+      &:nth-child(3) .services__card {
         img {
           width: 40%;
         }
       }
 
-      &:nth-child(4) {
+      &:nth-child(4) .services__card {
         img {
           width: 53%;
         }
@@ -2063,32 +2063,34 @@ footer {
       grid-gap: 40px;
     }
 
-    &__card {
-      height: 200px;
-
-      &:nth-child(1) {
+    .av-container {
+      &:nth-child(1) .services__card {
         img {
           width: 45%;
         }
       }
 
-      &:nth-child(2) {
+      &:nth-child(2) .services__card {
         img {
           width: 80%;
         }
       }
 
-      &:nth-child(3) {
+      &:nth-child(3) .services__card {
         img {
           width: 45%;
         }
       }
 
-      &:nth-child(4) {
+      &:nth-child(4) .services__card {
         img {
           width: 60%;
         }
       }
+    }
+
+    &__card {
+      height: 200px;
 
       h4 {
         font-size: 20px;
@@ -2474,6 +2476,32 @@ footer {
       margin-top: 42px;
     }
 
+    .av-container {
+      &:nth-child(1) .services__card {
+        img {
+          width: 121px;
+        }
+      }
+
+      &:nth-child(2) .services__card {
+        img {
+          width: 207px;
+        }
+      }
+
+      &:nth-child(3) .services__card {
+        img {
+          width: 109px;
+        }
+      }
+
+      &:nth-child(4) .services__card {
+        img {
+          width: 155px;
+        }
+      }
+    }
+
     &__card {
       height: 174px;
 
@@ -2486,30 +2514,6 @@ footer {
         font-size: 14px;
         line-height: 17px;
         margin: 29px 0 87px;
-      }
-
-      &:nth-child(1) {
-        img {
-          width: 121px;
-        }
-      }
-
-      &:nth-child(2) {
-        img {
-          width: 207px;
-        }
-      }
-
-      &:nth-child(3) {
-        img {
-          width: 109px;
-        }
-      }
-
-      &:nth-child(4) {
-        img {
-          width: 155px;
-        }
       }
     }
   }
