@@ -471,6 +471,56 @@ footer {
     margin-top: 50px;
   }
 
+  .av-container {
+    &:nth-child(1) .services__card {
+      background-image: linear-gradient(90deg, #4C0000 0%, #FF0000 100%);
+
+      &::before {
+        background-image: url("../img/services_decor_1.svg");
+      }
+
+      img {
+        width: 259px;
+      }
+    }
+
+    &:nth-child(2) .services__card  {
+      background-image: linear-gradient(90deg, #410058 0%, #EB00FF 100%);
+
+      &::before {
+        background-image: url("../img/services_decor_2.svg");
+      }
+
+      img {
+        width: 450px;
+      }
+    }
+
+    &:nth-child(3) .services__card  {
+      background-image: linear-gradient(90deg, #001E4C 0%, #0075FF 100%);
+
+      &::before {
+        background-image: url("../img/services_decor_3.svg");
+      }
+
+      img {
+        width: 266px;
+      }
+    }
+
+    &:nth-child(4) .services__card  {
+      background-image: linear-gradient(90deg, #002A0C 0%, #00DB3D 100%);
+
+      &::before {
+        background-image: url("../img/services_decor_4.svg");
+      }
+
+      img {
+        width: 372px;
+      }
+    }
+  }
+
   &__card {
     border-radius: 10px;
     cursor: pointer;
@@ -493,54 +543,6 @@ footer {
       right: 0;
       bottom: 0;
       left: 0;
-    }
-
-    &:nth-child(1) {
-      background-image: linear-gradient(90deg, #4C0000 0%, #FF0000 100%);
-
-      &::before {
-        background-image: url("../img/services_decor_1.svg");
-      }
-
-      img {
-        width: 259px;
-      }
-    }
-
-    &:nth-child(2) {
-      background-image: linear-gradient(90deg, #410058 0%, #EB00FF 100%);
-
-      &::before {
-        background-image: url("../img/services_decor_2.svg");
-      }
-
-      img {
-        width: 450px;
-      }
-    }
-
-    &:nth-child(3) {
-      background-image: linear-gradient(90deg, #001E4C 0%, #0075FF 100%);
-
-      &::before {
-        background-image: url("../img/services_decor_3.svg");
-      }
-
-      img {
-        width: 266px;
-      }
-    }
-
-    &:nth-child(4) {
-      background-image: linear-gradient(90deg, #002A0C 0%, #00DB3D 100%);
-
-      &::before {
-        background-image: url("../img/services_decor_4.svg");
-      }
-
-      img {
-        width: 372px;
-      }
     }
 
     img {
@@ -613,12 +615,18 @@ footer {
     margin-top: 63px;
   }
 
+  .av-container {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__card {
     background: #FFFFFF;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     padding: 20px 20px 31px 20px;
   }
 
@@ -1329,13 +1337,8 @@ footer {
     margin-top: 54px;
   }
 
-  &__card {
-    background-position: left;
-    background-size: cover;
-    border-radius: 10px;
-    padding: 27px 31px 21px;
-
-    &:nth-child(1) {
+  .av-container {
+    &:nth-child(1) .promotions__card {
       background-image: url("../img/promotions_1.jpg");
 
       .promotions {
@@ -1346,7 +1349,7 @@ footer {
       }
     }
 
-    &:nth-child(2) {
+    &:nth-child(2) .promotions__card {
       background-image: url("../img/promotions_2.jpg");
 
       .promotions {
@@ -1357,7 +1360,7 @@ footer {
       }
     }
 
-    &:nth-child(3) {
+    &:nth-child(3) .promotions__card {
       background-image: url("../img/promotions_3.jpg");
 
       .promotions {
@@ -1368,7 +1371,7 @@ footer {
       }
     }
 
-    &:nth-child(4) {
+    &:nth-child(4) .promotions__card {
       background-image: url("../img/promotions_4.jpg");
 
       .promotions {
@@ -1378,6 +1381,13 @@ footer {
         }
       }
     }
+  }
+
+  &__card {
+    background-position: left;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 27px 31px 21px;
   }
 
   &__name {

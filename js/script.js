@@ -1,3 +1,9 @@
+$('.aniview').AniView({
+    animateClass: 'animate__animated',
+    animateThreshold: 100,
+    scrollPollInterval: 20
+})
+
 $('.header__burger').on('click', function () {
     $('.mobile-nav').fadeIn(300)
 })
