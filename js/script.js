@@ -6,7 +6,7 @@ $('.mobile-nav__close').on('click', function () {
     $('.mobile-nav').fadeOut(300)
 })
 
-$('.first-block__btn, .service-detail__btn').on('click', function () {
+$('.first-block__btn, .service-detail__btn, .promotion__btn').on('click', function () {
     $('.modal').fadeIn(300)
 })
 
